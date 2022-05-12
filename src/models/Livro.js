@@ -2,7 +2,7 @@
 
 import mongoose from "mongoose";
 
-const livroSchema = new mongoose.Schema(
+const LivroSchema = new mongoose.Schema(
     {
         id: {type: String},
         titulo: {type: String, required: true},
@@ -12,6 +12,6 @@ const livroSchema = new mongoose.Schema(
     }
 )
 
-const livros = mongoose.model('livros', livroSchema);
+const Livro = mongoose.model('Livro', LivroSchema);
 
-export default livros;
+export default Livro;
